@@ -10,7 +10,7 @@ import ImageContainer from './ImageContainer.tsx'
 
 const Home = () => {
   return (
-    <div className={`relative h-[920px] w-screen bg-gray-600 bg-[url('/src/assets/home-pc.jpeg')] bg-cover bg-center min-w-[280px]`}>
+    <div className={`relative h-[780px] w-screen bg-gray-600 bg-[url('/src/assets/home-pc.jpeg')] bg-cover bg-center min-w-[280px]`}>
       <div className="absolute h-[80px] w-full flex justify-end items-center px-[23px]">
         <button>
           <img src={menu} alt="" className="w-[30px] h-[30px]"/>
@@ -38,7 +38,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={`h-[920px] w-screen bg-black bg-opacity-60 min-w-[280px]`}></div>
+      <div className={`h-[780px] w-screen bg-black bg-opacity-60 min-w-[280px]`}></div>
     </div>
   )
 }
