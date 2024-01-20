@@ -1,12 +1,20 @@
-import React from 'react'
+import React from "react";
 
-function ImageContainer({img1, img2}) {
+function ImageContainer({ img1, img2 }) {
   return (
-    <div className="flex space-x-[7px]">
-      <img src={img1} alt="" className="w-[42px] h-[40px] lg:w-[62px] lg:h-[60px]" />
-      <img src={img2} alt="" className="w-[42px] h-[40px] lg:w-[62px] lg:h-[60px]" />
-    </div >
-  )
+    <div className="flex space-x-[7px] hover:scale-75 2xl:hover:scale-75 duration-200">
+      <img
+        src={img1}
+        alt=""
+        className="w-[42px] h-[40px] lg:w-[62px] lg:h-[60px] 2xl:w-[82px] 2xl:h-[80px] object-cover"
+      />
+      <img
+        src={img2}
+        alt=""
+        className="w-[42px] h-[40px] lg:w-[62px] lg:h-[60px] 2xl:w-[82px] 2xl:h-[80px]"
+      />
+    </div>
+  );
 }
 
-export default ImageContainer
+export default ImageContainer;
