@@ -3,14 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './pages/home/Home.tsx'
-import ContactMe from './pages/contact me/ContactMe.tsx'
+import AboutMe from './pages/about me/AboutMe.tsx'
+import Projects from './pages/projects/Projects.tsx'
+import Test from './pages/projects/Test.tsx'
 
 function App() {
 
   return (
     <>
       <Home />
-      <ContactMe />
+      <AboutMe />
+      <Projects />
+      {/* <Test/> */}
     </>
   )
 }
