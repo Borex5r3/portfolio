@@ -2,7 +2,7 @@ import React from "react";
 export function SideBar({ handleSideBar }) {
   return (
     <div className="fixed min-w-[280px] w-full h-screen bg-[#262626]">
-      <div className="fixed w-full h-[80px] flex justify-end items-center px-[23px]">
+      <div className="absolute w-full h-[80px] flex justify-end items-center px-[23px]">
         <button onClick={handleSideBar}>
           <img
             src="/src/assets/plus.png"
