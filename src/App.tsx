@@ -5,7 +5,6 @@ import './App.css'
 import Home from './pages/home/Home.tsx'
 import AboutMe from './pages/about me/AboutMe.tsx'
 import Projects from './pages/projects/Projects.tsx'
-import Test from './pages/projects/Test.tsx'
 
 function App() {
 
@@ -14,7 +13,6 @@ function App() {
       <Home />
       <AboutMe />
       <Projects />
-      {/* <Test/> */}
     </>
   )
 }
