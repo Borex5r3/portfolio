@@ -1,5 +1,7 @@
+import { Intro } from "./Intro";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import InputTemplate from "./InputTemplate.tsx";
 
 function ContactMe() {
   const {
@@ -32,28 +34,19 @@ function ContactMe() {
     setNameValue("");
     setEmailValue("");
   };
-
   return (
     <div className="h-[736px] min-w-[280px] flex flex-col bg-black text-[#C8C8C8] items-center pt-[86px] pb-[46px] px-[23px] lg:px-[15vw] font-light space-y-[50px]">
-      <div className="space-y-[17px] flex flex-col w-full">
-        <p className="w-full text-[20px] lg:text-[30px] text-[#7AFBB9] font-medium">
-          Contact Me
-        </p>
-        <p className="text-[15px] lg:text-[20px]">
-          Ready to bring your vision to life? Reach out, and let's build
-          something amazing together!
-        </p>
-      </div>
+      <Intro />
       <form
         className="w-full flex flex-col space-y-[35px]"
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="space-y-[30px]">
           <div className="flex flex-col space-y-[30px] lg:flex-row lg:space-y-0 lg:space-x-5">
-            <div className="group relative flex flex-col justify-center lg:w-1/2">
+            <div className="group relative flex items-center lg:w-1/2">
               <label
                 htmlFor="Name"
-                className={`absolute text-gray-500  ml-[15px] transition-all duration-200 ${
+                className={`absolute text-gray-500 ml-[15px] transition-all duration-200 ${
                   nameValue
                     ? styleLabel
                     : "group-focus-within:text-[0.7rem] group-focus-within:translate-y-[-21px] group-focus-within:bg-black group-focus-within:border-x-2 group-focus-within:opacity-100  group-focus-within:px-2 opacity-80"
@@ -83,10 +76,10 @@ function ContactMe() {
             <div className="group relative flex items-center lg:w-1/2">
               <label
                 htmlFor="Email"
-                className={`absolute text-gray-500 ml-[15px]  group-focus-within:text-[0.7rem] transition-all duration-200 ${
+                className={`absolute text-gray-500 ml-[15px] transition-all duration-200 ${
                   emailValue
                     ? styleLabel
-                    : "opacity-80 group-focus-within:translate-y-[-21px] group-focus-within:bg-black group-focus-within:border-x-2 group-focus-within:opacity-100  group-focus-within:px-2"
+                    : "group-focus-within:text-[0.7rem] group-focus-within:translate-y-[-21px] group-focus-within:bg-black group-focus-within:border-x-2 group-focus-within:opacity-100  group-focus-within:px-2 opacity-80"
                 }`}
               >
                 Email
