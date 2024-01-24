@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <div
-      className={`relative h-screen lg:h-screen w-full bg-[url('/src/assets/home-pc.jpeg')] bg-cover bg-center min-w-[280px]`}
+      className={`relative h-screen lg:h-screen w-full bg-[url('/src/assets/home-bg-green.jpg')] bg-cover bg-center min-w-[280px]`}
     >
       <NavBar isMobile={isMobile} handleSideBar={handleSideBar} />
       <div className="absolute flex flex-col  items-center lg:px-[15vw] top-[100px] lg:top-[25%] w-full space-y-[20px] lg:space-y-[49px] text-[#C8C8C8]">
@@ -29,7 +29,7 @@ const Home = () => {
       </div>
       {isMobile && showSideBar && <SideBar handleSideBar={handleSideBar} />}
       <div
-        className={`h-screen lg:h-screen w-full bg-black bg-opacity-60 min-w-[280px]`}
+        className={`h-screen lg:h-screen w-full bg-black bg-opacity-30 min-w-[280px]`}
       ></div>
     </div>
   );
