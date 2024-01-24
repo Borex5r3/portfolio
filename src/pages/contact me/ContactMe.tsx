@@ -150,9 +150,10 @@ function ContactMe() {
         </div>
         <button
           type="submit"
-          className="border rounded-[6px] py-[5px] border-[#7AFBB9] text-[#7AFBB9] font-medium hover:text-black hover:bg-[#7AFBB9] hover:border-0 duration-200 lg:w-1/3 xl:w-1/4 2xl:w-1/5"
+          className="relative border rounded-[6px] py-[5px] border-[#7AFBB9] text-[#7AFBB9] font-medium hover:text-black transition-all duration-200 ease-in-out lg:w-1/3 xl:w-1/4 2xl:w-1/5 group z-10"
         >
           Submit
+          <div className="absolute top-0 bottom-0 left-0 right-0 bg-[#7AFBB9] -z-10 scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out duration-300 rounded-[4px] origin-left"></div>
         </button>
       </form>
     </div>

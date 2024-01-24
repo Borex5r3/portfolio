@@ -1,4 +1,5 @@
 import React from "react";
+import LinkAndGit from '/src/components/LinkAndGit.tsx';
 export function Content({}) {
   return (
     <div className="flex flex-col 2xl:w-full 2xl:justify-between lg:flex-row-reverse items-center space-y-[20px] lg:space-y-0 lg:space-x-reverse lg:space-x-20">
@@ -23,7 +24,8 @@ export function Content({}) {
           <span className="text-[#7AFBB9]">Dbaich</span>. A passionate Front-end
           Developer based in Morocco. 📍
         </p>
-        <div className="flex justify-between self-start w-max space-x-[10px] 2xl:space-x-[30px]">
+        <LinkAndGit mobileIconWidth={"30px"} deskIconWidth={"50px"}/>
+        {/* <div className="flex justify-between self-start w-max space-x-[10px] 2xl:space-x-[30px]">
           <a
             target="_blank"
             href="https://www.linkedin.com/in/abdellah-dbaich-3850171b9/"
@@ -41,7 +43,7 @@ export function Content({}) {
               className="w-[30px] h-[30px] lg:w-[50px] lg:h-[50px] hover:rotate-12 duration-200"
             />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
