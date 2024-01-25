@@ -1,7 +1,13 @@
-import React from "react";
-import ImageContainer from "./ImageContainer.tsx";
 
-export function TechStack({}) {
+import ImageContainer from "./ImageContainer.tsx";
+import html from '../../assets/html.svg';
+import css from '../../assets/css.svg';
+import js from '../../assets/js.svg';
+import ts from '../../assets/ts.svg';
+import react from '../../assets/react.svg';
+import tailwind from '../../assets/tailwind.svg';
+
+export function TechStack() {
   return (
     <div className="lg:w-full">
       <div className="flex flex-col lg:flex-row items-center space-y-[30px] lg:space-y-0 w-full lg:w-auto lg:space-x-10">
@@ -12,16 +18,16 @@ export function TechStack({}) {
         </div>
         <div className="grid grid-cols-2 sm:grid-flow-col lg:gap-[40px] px-[23px]">
           <ImageContainer
-            img1={"/src/assets/html.svg"}
-            img2={"/src/assets/css.svg"}
+            img1={html}
+            img2={css}
           />
           <ImageContainer
-            img1={"/src/assets/js.svg"}
-            img2={"/src/assets/ts.svg"}
+            img1={js}
+            img2={ts}
           />
           <ImageContainer
-            img1={"/src/assets/react.svg"}
-            img2={"/src/assets/tailwind.svg"}
+            img1={react}
+            img2={tailwind}
           />
         </div>
       </div>

@@ -1,6 +1,4 @@
-import React from "react";
-
-function ImageContainer({ img1, img2 }) {
+function ImageContainer({ img1, img2 }: { img1: string; img2: string }) {
   return (
     <div className="flex space-x-[7px] hover:scale-75 2xl:hover:scale-75 duration-200">
       <img

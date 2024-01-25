@@ -1,5 +1,4 @@
-import React from "react";
-import LinkAndGit from "/src/components/LinkAndGit.tsx";
+import LinkAndGit from '../../components/LinkAndGit.tsx';
 
 function Footer() {
   return (

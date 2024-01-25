@@ -1,4 +1,3 @@
-import React from "react";
 export function Intro({}) {
   return (
     <div className="flex flex-col w-full space-y-[17px] text-[15px] lg:text-[26px]">

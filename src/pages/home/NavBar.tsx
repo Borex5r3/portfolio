@@ -1,11 +1,21 @@
-import React from "react";
 import menu from "/src/assets/menu.png";
+import { HashLink as Link } from "react-router-hash-link";
 
-export function NavBar({ isMobile, handleSideBar, showSideBar }) {
-  console.log(showSideBar);
-
+export function NavBar({
+  isMobile,
+  handleSideBar,
+  showSideBar,
+}: {
+  isMobile: boolean;
+  handleSideBar: any;
+  showSideBar: boolean;
+}) {
   return (
-    <div className={`${showSideBar ? "hidden" : "fixed"} h-[80px] w-full flex justify-end lg:justify-center items-center px-[23px] z-50`}>
+    <div
+      className={`${
+        showSideBar ? "hidden" : "fixed"
+      } h-[80px] w-full flex justify-end lg:justify-center items-center px-[23px] z-50`}
+    >
       {isMobile ? (
         <button onClick={handleSideBar}>
           <img
@@ -17,16 +27,24 @@ export function NavBar({ isMobile, handleSideBar, showSideBar }) {
       ) : (
         <div className="text-[30px] text-[#C8C8C8] flex space-x-[55px]">
           <button className="hover:border-b-2 hover:text-[#FFF] border-[#7AFBB9]">
-            <a href="#home">Home</a>
+            <Link smooth to="#home">
+              Home
+            </Link>
           </button>
           <button className="hover:border-b-2 hover:text-[#FFF] border-[#7AFBB9]">
-            <a href="#about">About</a>
+            <Link smooth to="#about">
+              About
+            </Link>
           </button>
           <button className="hover:border-b-2 hover:text-[#FFF] border-[#7AFBB9]">
-            <a href="#projects">Projects</a>
+            <Link smooth to="#projects">
+              Projects
+            </Link>
           </button>
           <button className="hover:border-b-2 hover:text-[#FFF] border-[#7AFBB9]">
-            <a href="#contact">Contact</a>
+            <Link smooth to="#contact">
+              Contact
+            </Link>
           </button>
         </div>
       )}

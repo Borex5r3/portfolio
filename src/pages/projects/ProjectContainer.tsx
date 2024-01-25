@@ -1,5 +1,3 @@
-import React from "react";
-
 function ProjectContainer({
   img,
   title,
@@ -8,6 +6,14 @@ function ProjectContainer({
   codeLink,
   imgW,
   reverseContent,
+} : {
+  img: string;
+  title: string;
+  content: string;
+  demoLink?: string;
+  codeLink: string;
+  imgW: number;
+  reverseContent?: boolean;
 }) {
   return (
     <div

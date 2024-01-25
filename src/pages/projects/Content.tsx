@@ -1,8 +1,11 @@
-import React from "react";
 import ProjectContainer from "./ProjectContainer.tsx";
 import { useMediaQuery } from "react-responsive";
+import netflix from "../../assets/netflix.png";
+import ft_transcendence from "../../assets/ft_transcendence.png";
+import web_server from "../../assets/web-server.png";
+import inception from "../../assets/inception.png";
 
-export function Content({}) {
+export function Content() {
   const isMobile = useMediaQuery({
     query: "(max-width: 1023px)",
   });
@@ -16,16 +19,8 @@ export function Content({}) {
     <div className="flex flex-col space-y-[55px] lg:space-y-[100px] mt-[70px] lg:mt-[130px]">
       {/* netflix */}
       <ProjectContainer
-        img={"/src/assets/netflix.png"}
-        imgW={
-          isMobile
-            ? "400"
-            : mediumDesktop
-            ? "500"
-            : largeDesktop
-            ? "600"
-            : "733"
-        }
+        img={netflix}
+        imgW={isMobile ? 400 : mediumDesktop ? 500 : largeDesktop ? 600 : 733}
         title={"Netflix Clone"}
         content={
           "I aimed to showcase my proficiency in front-end development by recreating the user interface of the world-renowned streaming platform, Netflix."
@@ -35,16 +30,8 @@ export function Content({}) {
       />
       {/* ft_transcendence */}
       <ProjectContainer
-        img={"/src/assets/ft_transcendence.png"}
-        imgW={
-          isMobile
-            ? "400"
-            : mediumDesktop
-            ? "420"
-            : largeDesktop
-            ? "580"
-            : "728"
-        }
+        img={ft_transcendence}
+        imgW={isMobile ? 400 : mediumDesktop ? 420 : largeDesktop ? 580 : 728}
         title={"ft_transcendence"}
         content={
           "Dive into the world of web development with my most exhilarating project yet – an Online Ping Pong Game. This venture served as the playground where I harnessed the power of HTML, CSS, JavaScript, TypeScript, and the efficiency of Tailwind CSS."
@@ -54,16 +41,8 @@ export function Content({}) {
       />
       {/* Web Server */}
       <ProjectContainer
-        img={"/src/assets/web-server.png"}
-        imgW={
-          isMobile
-            ? "400"
-            : mediumDesktop
-            ? "500"
-            : largeDesktop
-            ? "600"
-            : "733"
-        }
+        img={web_server}
+        imgW={isMobile ? 400 : mediumDesktop ? 500 : largeDesktop ? 600 : 733}
         title={"Web Server"}
         content={
           "Implemented a robust web server using C++ and applied Object-Oriented Programming (OOP) concepts for a seamless and efficient structure. Responsible for handling GET, POST, and DELETE requests, ensuring smooth communication between the server and clients."
@@ -72,16 +51,8 @@ export function Content({}) {
       />
       {/* inception */}
       <ProjectContainer
-        img={"/src/assets/inception.png"}
-        imgW={
-          isMobile
-            ? "400"
-            : mediumDesktop
-            ? "500"
-            : largeDesktop
-            ? "600"
-            : "728"
-        }
+        img={inception}
+        imgW={isMobile ? 400 : mediumDesktop ? 500 : largeDesktop ? 600 : 728}
         title={"Inception"}
         content={
           "This undertaking was a hands-on exploration into the realm of Docker, Docker Compose, and the intricate art of working with containers."

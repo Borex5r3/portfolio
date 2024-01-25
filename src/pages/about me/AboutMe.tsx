@@ -1,10 +1,10 @@
-import React from "react";
+import cat_pc from '../../assets/cat-pc.jpeg';
 
 function AboutMe() {
   return (
     <div className="h-[637px] min-w-[280px] bg-black flex flex-col lg:flex-row lg:space-y-0 lg:px-[15vw] items-center pt-[86px] pb-[46px] space-y-[59px] lg:space-x-[67px] px-[23px]" id="about">
       <img
-        src="/src/assets/cat-pc.jpeg"
+        src={cat_pc}
         alt=""
         className="w-[235px] h-[154px] lg:w-[400px] 2xl:w-[600px] 2xl:h-[375px] lg:h-[250px]"
       />

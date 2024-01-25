@@ -2,10 +2,7 @@ import { TechStack } from "./TechStack";
 import { Content } from "./Content";
 import { NavBar } from "./NavBar";
 import { SideBar } from "./SideBar";
-import React, { useState } from "react";
-import menu from "/src/assets/menu.png";
-import home_pc from "/src/assets/home-pc.jpeg";
-import ImageContainer from "./ImageContainer.tsx";
+import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
 const Home = () => {

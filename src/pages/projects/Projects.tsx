@@ -1,6 +1,5 @@
 import { Content } from "./Content";
 import { Intro } from "./Intro";
-import React from "react";
 
 function Projects() {
   return (

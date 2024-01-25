@@ -1,7 +1,6 @@
 import { Intro } from "./Intro";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
-import InputTemplate from "./InputTemplate.tsx";
 
 function ContactMe() {
   const {
@@ -18,17 +17,18 @@ function ContactMe() {
   const styleMsgLabel =
     "text-[0.7rem] translate-y-[-18px] bg-black border-x-2 opacity-100 px-2";
 
-  const handleNameInput = (e) => {
+  const handleNameInput = (e: any) => {
     setNameValue(e.target.value);
   };
-  const handleEmailInput = (e) => {
+  const handleEmailInput = (e: any) => {
     setEmailValue(e.target.value);
   };
-  const handleMessageInput = (e) => {
+  const handleMessageInput = (e: any) => {
     setMessageValue(e.target.value);
   };
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: any) => {
     console.log(data);
+    
     reset();
     setMessageValue("");
     setNameValue("");
@@ -70,7 +70,7 @@ function ContactMe() {
                     : "hidden"
                 }
               >
-                {errors.name?.message}
+                {String(errors.name?.message)}
               </p>
             </div>
             <div className="group relative flex items-center lg:w-1/2">
@@ -105,7 +105,7 @@ function ContactMe() {
                     : "hidden"
                 }
               >
-                {errors.email?.message}
+                {String(errors.email?.message)}
               </p>
             </div>
           </div>
@@ -134,7 +134,7 @@ function ContactMe() {
               })}
               onChange={handleMessageInput}
               id="userMessage"
-              rows="4"
+              rows={4}
               className="w-full bg-inherit border border-[#D9D9D9] rounded-[6px] px-[15px] pt-[10px] outline-none"
             />
             <p
@@ -144,7 +144,7 @@ function ContactMe() {
                   : "hidden"
               }
             >
-              {errors.userMessage?.message}
+              {String(errors.userMessage?.message)}
             </p>
           </div>
         </div>
