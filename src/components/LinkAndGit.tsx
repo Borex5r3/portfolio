@@ -1,8 +1,6 @@
 import React from "react";
 
-function LinkAndGit({mobileIconWidth, deskIconWidth}) {
-  console.log(mobileIconWidth);
-
+function LinkAndGit({ mobileIconWidth, deskIconWidth }) {
   return (
     <div className="flex justify-between self-start w-max space-x-[10px] 2xl:space-x-[30px]">
       <a

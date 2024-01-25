@@ -35,7 +35,7 @@ function ContactMe() {
     setEmailValue("");
   };
   return (
-    <div className="h-[736px] min-w-[280px] flex flex-col bg-black text-[#C8C8C8] items-center pt-[86px] pb-[46px] px-[23px] lg:px-[15vw] font-light space-y-[50px]">
+    <div className="h-[736px] min-w-[280px] flex flex-col bg-black text-[#C8C8C8] items-center pt-[86px] pb-[46px] px-[23px] lg:px-[15vw] font-light space-y-[50px]" id="contact">
       <Intro />
       <form
         className="w-full flex flex-col space-y-[35px]"
