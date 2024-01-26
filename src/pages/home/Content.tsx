@@ -8,7 +8,7 @@ export function Content({}) {
       <img
         src={me1}
         alt="me"
-        className="w-[235px] h-[305px] 2xl:w-[400px] 2xl:h-[500px]"
+        className="w-[150px] sm:w-[235px] sm:h-[305px] 2xl:w-[400px] 2xl:h-[500px]"
       />
       <div className="flex flex-col space-y-[15px] 2xl:space-y-[30px] px-[23px] text-[0.938rem] lg:text-[25px] 2xl:text-[28px] lg:font-light items-center lg:items-start">
         <div className="flex space-x-2 lg:space-x-[16px] items-end text-[1.563rem] font-semibold lg:text-[50px] 2xl:text-[80px] w-min sm:w-auto 2xl:items-center">

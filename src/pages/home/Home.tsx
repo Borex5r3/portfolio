@@ -17,16 +17,16 @@ const Home = () => {
 
   return (
     <div
-      className={`relative h-screen lg:h-screen w-full bg-[url('/src/assets/home-bg-green.jpg')] bg-cover bg-center min-w-[280px]`}
+      className={`relative lg:h-screen lg:min-h-[800px] h-[800px] w-full bg-[url('/src/assets/home-bg-green.jpg')] bg-cover bg-center min-w-[280px]`}
     id="home">
       <NavBar isMobile={isMobile} handleSideBar={handleSideBar} showSideBar={showSideBar}/>
       {isMobile && <SideBar handleSideBar={handleSideBar} showSideBar={showSideBar} />}
-      <div className="absolute flex flex-col  items-center lg:px-[15vw] top-[100px] lg:top-[25%] w-full space-y-[20px] lg:space-y-[49px] text-[#C8C8C8]">
+      <div className="absolute flex flex-col  items-center lg:px-[15vw] top-[100px] lg:top-[25%] w-full space-y-[20px] lg:space-y-[200px] text-[#C8C8C8]">
         <Content />
         <TechStack />
       </div>
       <div
-        className={`h-screen lg:h-screen w-full bg-black bg-opacity-30 min-w-[280px]`}
+        className={`lg:h-screen h-[800px] lg:min-h-[800px] w-full bg-black bg-opacity-30 min-w-[280px]`}
       ></div>
     </div>
   );

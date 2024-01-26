@@ -16,7 +16,7 @@ export function TechStack() {
             Tech Stack
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-flow-col lg:gap-[40px] px-[23px]">
+        <div className="grid grid-cols-2 sm:grid-flow-col lg:gap-[40px] px-[23px] gap-[10px]">
           <ImageContainer
             img1={html}
             img2={css}
