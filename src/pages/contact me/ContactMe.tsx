@@ -1,6 +1,9 @@
 import { Intro } from "./Intro";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactMe() {
   const {
@@ -26,18 +29,67 @@ function ContactMe() {
   const handleMessageInput = (e: any) => {
     setMessageValue(e.target.value);
   };
-  const onSubmit = async (data: any) => {
-    console.log(data);
-    
+  const form = useRef<HTMLFormElement>(null);
+  const toastMessage = (isSuccess: boolean) => {
+    const successMessage = "Thank you for reaching out!";
+    const failureMessage =
+      "Oops! It seems there was an issue submitting your message.";
+    return isSuccess
+      ? toast.success(successMessage, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        })
+      : toast.error(failureMessage, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+  };
+  const onSubmit = async (_data: any) => {
+
+    const data = form.current ? form.current : String(null);
+    emailjs
+      .sendForm(
+        "service_qhkm9we",
+        "template_sf7v53y",
+        data,
+        "1wBoR0yffa0rLnKVI"
+      )
+      .then(
+        (_result) => {
+          toastMessage(true);
+          // show the user a success message
+        },
+        (_error) => {
+          toastMessage(false);
+          // show the user an error
+        }
+      );
     reset();
     setMessageValue("");
     setNameValue("");
     setEmailValue("");
   };
+
   return (
-    <div className="h-[736px] min-w-[280px] flex flex-col bg-black text-[#C8C8C8] items-center pt-[86px] pb-[46px] px-[23px] lg:px-[15vw] font-light space-y-[50px]" id="contact">
+    <div
+      className="h-[736px] min-w-[280px] flex flex-col bg-black text-[#C8C8C8] items-center pt-[86px] pb-[46px] px-[23px] lg:px-[15vw] font-light space-y-[50px]"
+      id="contact"
+    >
       <Intro />
       <form
+        ref={form}
         className="w-full flex flex-col space-y-[35px]"
         onSubmit={handleSubmit(onSubmit)}
       >
@@ -156,6 +208,7 @@ function ContactMe() {
           <div className="absolute top-0 bottom-0 left-0 right-0 bg-[#7AFBB9] -z-10 scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out duration-300 rounded-[4px] origin-left"></div>
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
 }
