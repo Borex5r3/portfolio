@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <div
-      className={`relative lg:min-h-[800px] h-[1100px] w-full bg-[url('/src/assets/home-bg-green.jpg')] bg-cover bg-center min-w-[280px]`}
+      className={`relative lg:min-h-[1200px] h-[800px] w-full bg-[url('/src/assets/home-bg-green.jpg')] bg-cover bg-center min-w-[280px]`}
     id="home">
       <NavBar isMobile={isMobile} handleSideBar={handleSideBar} showSideBar={showSideBar}/>
       {isMobile && <SideBar handleSideBar={handleSideBar} showSideBar={showSideBar} />}
