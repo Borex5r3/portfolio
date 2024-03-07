@@ -13,7 +13,7 @@ export function NavBar({
   return (
     <div
       className={`${
-        showSideBar ? "hidden" : "fixed"
+        showSideBar ? "hidden" : "absolute"
       } h-[80px] w-full flex justify-end lg:justify-center items-center px-[23px] z-50`}
     >
       {isMobile ? (
