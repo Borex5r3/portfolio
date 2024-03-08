@@ -26,7 +26,7 @@ const Home = () => {
         <TechStack />
       </div>
       <div
-        className={`lg:h-screen h-[800px] lg:min-h-[800px] w-full bg-black bg-opacity-30 min-w-[280px]`}
+        className={`h-[800px] lg:min-h-[1200px] w-full bg-black bg-opacity-30 min-w-[280px]`}
       ></div>
     </div>
   );
