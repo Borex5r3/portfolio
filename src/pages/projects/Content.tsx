@@ -4,6 +4,7 @@ import netflix from "../../assets/netflix.png";
 import ft_transcendence from "../../assets/ft_transcendence.png";
 import web_server from "../../assets/web-server.png";
 import inception from "../../assets/inception.png";
+import video_cover from "../../assets/youtube_internship_video_cover.webp";
 
 export function Content() {
   const isMobile = useMediaQuery({
@@ -17,6 +18,17 @@ export function Content() {
   });
   return (
     <div className="flex flex-col space-y-[55px] lg:space-y-[100px] mt-[70px] lg:mt-[130px]">
+      {/* AWB internship */}
+      <ProjectContainer
+        img={video_cover}
+        imgW={isMobile ? 400 : mediumDesktop ? 500 : largeDesktop ? 600 : 733}
+        title={"Trading Room Internship Overview"}
+        content={
+          "During my internship in the trading room of a leading bank, I developed a Python tool to automate file searches and data extraction, optimizing operational efficiency. Additionally, I created interactive Power BI dashboards to analyze corporate traders’ performance, providing actionable insights through dynamic visualizations. This experience strengthened my technical skills in Python and Power BI while deepening my understanding of financial data management."
+        }
+        demoLink={"https://youtu.be/e0_4KJVv0I0"}
+        reverseContent={isMobile ? false : true}
+      />
       {/* netflix */}
       <ProjectContainer
         img={netflix}

@@ -6,6 +6,11 @@ import js from '../../assets/js.svg';
 import ts from '../../assets/ts.svg';
 import react from '../../assets/react.svg';
 import tailwind from '../../assets/tailwind.svg';
+import python from '../../assets/python-logo-only.svg';
+import power_bi from '../../assets/New_Power_BI_Logo.svg';
+import docker from '../../assets/docker-mark-blue.svg';
+import nestjs from '../../assets/NestJS.svg';
+
 
 export function TechStack() {
   return (
@@ -28,6 +33,14 @@ export function TechStack() {
           <ImageContainer
             img1={react}
             img2={tailwind}
+          />
+          <ImageContainer
+            img1={docker}
+            img2={nestjs}
+          />
+          <ImageContainer
+            img1={python}
+            img2={power_bi}
           />
         </div>
       </div>

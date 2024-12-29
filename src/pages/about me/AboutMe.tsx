@@ -14,13 +14,10 @@ function AboutMe() {
         </p>
         <div className="space-y-[10px] font-light">
           <p>
-            Hello, I'm Abdellah, a dedicated front-end developer specializing in
-            React.js, Tailwind CSS, and TypeScript.
+            Hello, I'm Abdellah, a passionate software developer with experience in building dynamic, scalable applications using technologies like React.js, Next.js, Nest.js, TypeScript, Python, and Tailwind CSS.
           </p>
           <p>
-            Passionate about creating clean, user-friendly interfaces, I
-            transform concepts into visually appealing designs with a focus on
-            seamless user experiences.
+            I specialize in creating clean, efficient, and user-centric solutions, whether it's front-end interfaces or back-end systems. My focus is always on delivering high-quality code, seamless performance, and exceptional user experiences.
           </p>
           <p>Let's build something incredible together!</p>
         </div>
