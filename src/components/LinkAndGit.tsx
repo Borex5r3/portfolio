@@ -1,7 +1,13 @@
-import linkedin from '../assets/linkedin.png';
-import cat from '../assets/cat.png';
+import linkedin from "../assets/linkedin.png";
+import cat from "../assets/cat.png";
 
-function LinkAndGit({ mobileIconWidth, deskIconWidth } : { mobileIconWidth:string ; deskIconWidth:string }) {
+function LinkAndGit({
+  mobileIconWidth,
+  deskIconWidth,
+}: {
+  mobileIconWidth: string;
+  deskIconWidth: string;
+}) {
   return (
     <div className="flex justify-between self-start w-max space-x-[10px] 2xl:space-x-[30px]">
       <a

@@ -5,6 +5,7 @@ import ft_transcendence from "../../assets/ft_transcendence.png";
 import web_server from "../../assets/web-server.png";
 import inception from "../../assets/inception.png";
 import video_cover from "../../assets/youtube_internship_video_cover.webp";
+import tetrisImg from "../../assets/red_tetris.png";
 
 export function Content() {
   const isMobile = useMediaQuery({
@@ -18,6 +19,18 @@ export function Content() {
   });
   return (
     <div className="flex flex-col space-y-[55px] lg:space-y-[100px] mt-[70px] lg:mt-[130px]">
+      {/* Red Tetris */}
+      <ProjectContainer
+        img={tetrisImg}
+        imgW={isMobile ? 400 : mediumDesktop ? 500 : largeDesktop ? 600 : 733}
+        title={
+          "Red Tetris — Real‑Time Multiplayer Tetris with Custom Game Modes"
+        }
+        content={
+          "Red Tetris is a real-time, full-stack Tetris game featuring three custom modes — Classic, Ghost, and Gravity. It includes smooth animations, responsive UI, and custom game logic built from scratch. The project showcases strong skills in React, state management, and real-time gameplay architecture."
+        }
+        codeLink={"https://github.com/Borex5r3/red-tetris"}
+      />
       {/* AWB internship */}
       <ProjectContainer
         img={video_cover}

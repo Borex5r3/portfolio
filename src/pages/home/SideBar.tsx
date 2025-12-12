@@ -1,8 +1,16 @@
-import plus from '../../assets/plus.png';
+import plus from "../../assets/plus.png";
 
-export function SideBar({ handleSideBar, showSideBar } : { handleSideBar : any, showSideBar: boolean }) {
+export function SideBar({
+  handleSideBar,
+  showSideBar,
+}: {
+  handleSideBar: any;
+  showSideBar: boolean;
+}) {
   return (
-    <div className={`fixed min-w-[280px] w-full h-screen bg-[#262626] z-50 scale-x-0 ${showSideBar ? 'scale-x-100' : 'scale-x-0'} transition-transform duration-300 origin-left ease-in-out`}>
+    <div
+      className={`fixed min-w-[280px] w-full h-screen bg-[#262626] z-50 scale-x-0 ${showSideBar ? "scale-x-100" : "scale-x-0"} transition-transform duration-300 origin-left ease-in-out`}
+    >
       <div className="absolute w-full h-[80px] flex justify-end items-center px-[23px]">
         <button onClick={handleSideBar}>
           <img

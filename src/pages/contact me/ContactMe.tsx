@@ -57,14 +57,13 @@ function ContactMe() {
         });
   };
   const onSubmit = async (_data: any) => {
-
     const data = form.current ? form.current : String(null);
     emailjs
       .sendForm(
         "service_qhkm9we",
         "template_sf7v53y",
         data,
-        "1wBoR0yffa0rLnKVI"
+        "1wBoR0yffa0rLnKVI",
       )
       .then(
         (_result) => {
@@ -74,7 +73,7 @@ function ContactMe() {
         (_error) => {
           toastMessage(false);
           // show the user an error
-        }
+        },
       );
     reset();
     setMessageValue("");

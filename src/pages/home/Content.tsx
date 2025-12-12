@@ -1,8 +1,8 @@
-import LinkAndGit from '../../components/LinkAndGit.tsx';
-import emoji from '../../assets/smile.png';
-import me1 from '../../assets/me1.png';
+import LinkAndGit from "../../components/LinkAndGit.tsx";
+import emoji from "../../assets/smile.png";
+import me1 from "../../assets/me1.png";
 
-export function Content({ }) {
+export function Content({}) {
   return (
     <div className="flex flex-col 2xl:w-full 2xl:justify-between lg:flex-row-reverse items-center space-y-[20px] lg:space-y-0 lg:space-x-reverse lg:space-x-20">
       <img

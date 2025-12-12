@@ -1,16 +1,14 @@
-
 import ImageContainer from "./ImageContainer.tsx";
-import html from '../../assets/html.svg';
-import css from '../../assets/css.svg';
-import js from '../../assets/js.svg';
-import ts from '../../assets/ts.svg';
-import react from '../../assets/react.svg';
-import tailwind from '../../assets/tailwind.svg';
-import python from '../../assets/python-logo-only.svg';
-import power_bi from '../../assets/New_Power_BI_Logo.svg';
-import docker from '../../assets/docker-mark-blue.svg';
-import nestjs from '../../assets/NestJS.svg';
-
+import html from "../../assets/html.svg";
+import css from "../../assets/css.svg";
+import js from "../../assets/js.svg";
+import ts from "../../assets/ts.svg";
+import react from "../../assets/react.svg";
+import tailwind from "../../assets/tailwind.svg";
+import python from "../../assets/python-logo-only.svg";
+import power_bi from "../../assets/New_Power_BI_Logo.svg";
+import docker from "../../assets/docker-mark-blue.svg";
+import nestjs from "../../assets/NestJS.svg";
 
 export function TechStack() {
   return (
@@ -22,26 +20,11 @@ export function TechStack() {
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-flow-col lg:gap-[40px] px-[23px] gap-[10px]">
-          <ImageContainer
-            img1={html}
-            img2={css}
-          />
-          <ImageContainer
-            img1={js}
-            img2={ts}
-          />
-          <ImageContainer
-            img1={react}
-            img2={tailwind}
-          />
-          <ImageContainer
-            img1={docker}
-            img2={nestjs}
-          />
-          <ImageContainer
-            img1={python}
-            img2={power_bi}
-          />
+          <ImageContainer img1={html} img2={css} />
+          <ImageContainer img1={js} img2={ts} />
+          <ImageContainer img1={react} img2={tailwind} />
+          <ImageContainer img1={docker} img2={nestjs} />
+          <ImageContainer img1={python} img2={power_bi} />
         </div>
       </div>
     </div>

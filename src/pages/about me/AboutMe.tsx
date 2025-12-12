@@ -1,8 +1,11 @@
-import cat_pc from '../../assets/cat-pc.jpeg';
+import cat_pc from "../../assets/cat-pc.jpeg";
 
 function AboutMe() {
   return (
-    <div className="h-[637px] min-w-[280px] bg-black flex flex-col lg:flex-row lg:space-y-0 lg:px-[15vw] items-center pt-[86px] pb-[46px] space-y-[59px] lg:space-x-[67px] px-[23px]" id="about">
+    <div
+      className="h-[637px] min-w-[280px] bg-black flex flex-col lg:flex-row lg:space-y-0 lg:px-[15vw] items-center pt-[86px] pb-[46px] space-y-[59px] lg:space-x-[67px] px-[23px]"
+      id="about"
+    >
       <img
         src={cat_pc}
         alt=""
@@ -14,10 +17,15 @@ function AboutMe() {
         </p>
         <div className="space-y-[10px] font-light">
           <p>
-            Hello, I'm Abdellah, a passionate software developer with experience in building dynamic, scalable applications using technologies like React.js, Next.js, Nest.js, TypeScript, Python, and Tailwind CSS.
+            Hello, I'm Abdellah, a passionate software developer with experience
+            in building dynamic, scalable applications using technologies like
+            React.js, Next.js, Nest.js, TypeScript, Python, and Tailwind CSS.
           </p>
           <p>
-            I specialize in creating clean, efficient, and user-centric solutions, whether it's front-end interfaces or back-end systems. My focus is always on delivering high-quality code, seamless performance, and exceptional user experiences.
+            I specialize in creating clean, efficient, and user-centric
+            solutions, whether it's front-end interfaces or back-end systems. My
+            focus is always on delivering high-quality code, seamless
+            performance, and exceptional user experiences.
           </p>
           <p>Let's build something incredible together!</p>
         </div>

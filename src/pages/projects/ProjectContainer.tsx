@@ -17,9 +17,11 @@ function ProjectContainer({
 }) {
   return (
     <div
-      className={`flex flex-col items-center w-full space-y-[35px] lg:space-y-0 text-[15px] lg:text-[26px] ${reverseContent ? "lg:flex-row" : "lg:flex-row-reverse"
-        } ${reverseContent ? "lg:space-x-10" : "lg:space-x-reverse lg:space-x-10"
-        }`}
+      className={`flex flex-col items-center w-full space-y-[35px] lg:space-y-0 text-[15px] lg:text-[26px] ${
+        reverseContent ? "lg:flex-row" : "lg:flex-row-reverse"
+      } ${
+        reverseContent ? "lg:space-x-10" : "lg:space-x-reverse lg:space-x-10"
+      }`}
     >
       <img
         src={img}
